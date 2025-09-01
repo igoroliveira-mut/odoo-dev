@@ -42,5 +42,9 @@
     {
         "url": "git@github.com:mutualizo/server-tools.git",
         "branch": "14.0"
+    },
+    {
+        "url": "git@github.com:mutualizo/queue.git",
+        "branch": "14.0"
     }
 ]
