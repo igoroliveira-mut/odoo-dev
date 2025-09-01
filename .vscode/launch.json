@@ -2,11 +2,23 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Run Odoo 14",
+      "name": "Run Odoo",
       "type": "debugpy",
       "request": "launch",
       "program": "/opt/odoo/odoo-bin",
-      "args": ["-c", "${workspaceFolder}/odoo.conf"],
+      "args": ["-c", "${workspaceFolder}/odoo.conf", "--dev", "xml"],
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "env": {
+        "PYTHONPATH": "/opt/odoo"
+      }
+    },
+    {
+      "name": "Run Odoo Qweb",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "/opt/odoo/odoo-bin",
+      "args": ["-c", "${workspaceFolder}/odoo.conf", "--dev", "qweb"],
       "console": "integratedTerminal",
       "justMyCode": false,
       "env": {
