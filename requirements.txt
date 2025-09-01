@@ -1,0 +1,7 @@
+erpbrasil.base==2.3.2
+erpbrasil.edoc==3.0.0
+erpbrasil.edoc.pdf==1.2.1
+erpbrasil.assinatura==1.7.0
+erpbrasil.transmissao==1.1.0
+openupgradelib==3.7.1
+lxml==4.6.1

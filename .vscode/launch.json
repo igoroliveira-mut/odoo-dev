@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Odoo 14",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "/opt/odoo/odoo-bin",
+      "args": ["-c", "${workspaceFolder}/odoo.conf"],
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "env": {
+        "PYTHONPATH": "/opt/odoo"
+      }
+    }
+  ]
+}

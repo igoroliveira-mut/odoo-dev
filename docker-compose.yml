@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  odoo:
+    build: .
+    volumes:
+      - ./extra-addons:/workspace/extra-addons
+      - odoo-data:/var/lib/odoo
+    ports:
+      - "8069:8069"
+    command: sleep infinity
+    depends_on:
+      - db
+
+  db:
+    image: postgres:12
+    environment:
+      POSTGRES_USER: odoo
+      POSTGRES_PASSWORD: odoo
+      POSTGRES_DB: postgres
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:
+  odoo-data:

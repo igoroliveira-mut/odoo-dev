@@ -1,0 +1,46 @@
+[
+    {
+        "url": "git@github.com:mutualizo/MutualizoAddons.git",
+        "branch": "14.0_development"
+    },
+    {
+        "url": "git@github.com:mutualizo/design-themes.git",
+        "branch": "14.0"
+    },
+    {
+        "url": "git@github.com:mutualizo/account-payment.git",
+        "branch": "14.0"
+    },
+    {
+        "url": "git@github.com:mutualizo/account-reconcile.git",
+        "branch": "14.0"
+    },
+    {
+        "url": "git@github.com:mutualizo/bank-payment.git",
+        "branch": "14.0"
+    },
+    {
+        "url": "git@github.com:mutualizo/l10n-brazil.git",
+        "branch": "14.0"
+    },
+    {
+        "url": "git@github.com:mutualizo/muk_web.git",
+        "branch": "14.0"
+    },
+    {
+        "url": "git@github.com:mutualizo/bank-statement-import.git",
+        "branch": "14.0"
+    },
+    {
+        "url": "git@github.com:mutualizo/CybroAddons.git",
+        "branch": "14.0"
+    },
+    {
+        "url": "git@github.com:mutualizo/contract.git",
+        "branch": "14.0"
+    },
+    {
+        "url": "git@github.com:mutualizo/server-tools.git",
+        "branch": "14.0"
+    }
+]

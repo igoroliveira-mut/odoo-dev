@@ -1,0 +1,32 @@
+{
+  "name": "Odoo 14 Dev",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "odoo",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "python.defaultInterpreterPath": "python3.8"
+      },
+      "extensions": [
+        "redhat.vscode-yaml",
+        "mgesbert.python-path",
+        "redhat.vscode-commons",
+        "fabianlauer.vs-code-xml-format",
+        "redhat.vscode-xml",
+        "mechatroner.rainbow-csv",
+        "ms-python.python",
+        "ms-python.debugpy",
+        "esbenp.prettier-vscode",
+        "scapigliato.vsc-odoo-development",
+        "jigar-patel.odoosnippets",
+        "dotjoshjohnson.xml",
+        "christian-kohler.path-intellisense",
+        "usernamehw.errorlens"
+      ]
+    }
+  },
+  "postCreateCommand": "sh .vscode/postCreateCommand.sh",
+  "remoteUser": "root"
+}
