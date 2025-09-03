@@ -1,0 +1,26 @@
+services:
+  odoo-mut-19:
+    build: .
+    container_name: odoo-mut-19
+    command: sleep infinity
+    ports:
+      - "10900:8069"
+    depends_on:
+      - db-mut-19
+    volumes:
+      - ./extra-addons:/workspace/extra-addons
+    networks:
+      - odoo_network
+
+  db-mut-19:
+    image: postgres:15.4
+    container_name: db-mut-19
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo
+    networks:
+      - odoo_network
+
+networks:
+  odoo_network:

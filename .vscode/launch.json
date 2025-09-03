@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Odoo",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "/usr/bin/odoo",
+      "args": ["-c", "/etc/odoo/odoo.conf", "--dev", "xml"],
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Run Odoo QWEB",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "/usr/bin/odoo",
+      "args": ["-c", "/etc/odoo/odoo.conf", "--dev", "qweb"],
+      "console": "integratedTerminal",
+      "justMyCode": false
+    }
+  ]
+}
