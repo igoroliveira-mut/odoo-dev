@@ -1,0 +1,26 @@
+{
+  "name": "Odoo 18 Dev",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "odoo18",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.vscode-yaml",
+        "mgesbert.python-path",
+        "redhat.vscode-commons",
+        "fabianlauer.vs-code-xml-format",
+        "redhat.vscode-xml",
+        "mechatroner.rainbow-csv",
+        "ms-python.python",
+        "ms-python.debugpy",
+        "esbenp.prettier-vscode",
+        "scapigliato.vsc-odoo-development",
+        "jigar-patel.odoosnippets",
+        "dotjoshjohnson.xml",
+        "christian-kohler.path-intellisense",
+        "usernamehw.errorlens"
+      ]
+    }
+  }
+}
