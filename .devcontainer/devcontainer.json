@@ -1,7 +1,7 @@
 {
-  "name": "Odoo 14 Dev",
+  "name": "Odoo 14 Mutualizo",
   "dockerComposeFile": "../docker-compose.yml",
-  "service": "odoo",
+  "service": "odoo-mut-14",
   "workspaceFolder": "/workspace",
   "customizations": {
     "vscode": {

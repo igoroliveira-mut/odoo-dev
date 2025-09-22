@@ -1,26 +1,27 @@
-version: "3.9"
-
 services:
-  odoo:
+  odoo-mut-14:
     build: .
+    container_name: odoo-mut-14
+    command: sleep infinity
+    ports:
+      - "10700:8069"
+    depends_on:
+      - db-mut-14
     volumes:
       - ./extra-addons:/workspace/extra-addons
-      - odoo-data:/var/lib/odoo
-    ports:
-      - "8069:8069"
-    command: sleep infinity
-    depends_on:
-      - db
+    networks:
+      - odoo_network
 
-  db:
-    image: postgres:12
+  db-mut-14:
+    image: postgres:13
+    container_name: db-mut-14
     environment:
-      POSTGRES_USER: odoo
-      POSTGRES_PASSWORD: odoo
-      POSTGRES_DB: postgres
-    volumes:
-      - db-data:/var/lib/postgresql/data
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo
+    networks:
+      - odoo_network
 
-volumes:
-  db-data:
-  odoo-data:
+networks:
+  odoo_network:
+    driver: bridge
