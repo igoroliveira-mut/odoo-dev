@@ -1,2 +1,3 @@
 extra-addons/*
 !extra-addons/.gitkeep
+!extra-addons/requirements.txt

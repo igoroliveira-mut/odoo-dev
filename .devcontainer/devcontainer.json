@@ -22,5 +22,6 @@
         "usernamehw.errorlens"
       ]
     }
-  }
+  },
+  "postCreateCommand": "pip install -r /workspace/extra-addons/requirements.txt && pip install -r /workspace/extra-addons/community_modules/requirements.txt"
 }
